@@ -21,15 +21,41 @@
 <body>
     <div class="container-fludic">
         <div class="container">
-            <header class="header clearfix">
+            <header class="header clearfix navbar-success">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
                     <a class="navbar-brand" href="#">
                         <img alt="" src="images/dot.png" />
                     </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="pull-right">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right text-left">
+                        <li><a class="btn btn-link btn-sm" href="#">Find a sitter</a></li>
+                        <li><a class="btn btn-link btn-sm" href="#">How it works</a></li>
+                        <li class="dropdown">
+                            <a class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="location"></span>Select City
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Delhi</a></li>
+                                <li><a href="#">Mumbay</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="btn btn-default btn-sm">Become a sitter</a></li>
+                        <li><a href="#" class="btn btn-default btn-sm">Login</a></li>
+                        <li><a href="#" class="btn btn-success btn-sm">Sign Up</a></li>
+                    </ul>
+                    <!-- <div class="pull-right">
                     <div class="btn-toolbar pull-left">
                         <a class="btn btn-link btn-sm" href="#">Find a sitter</a>
                         <a class="btn btn-link btn-sm" href="#">How it works</a>
@@ -49,20 +75,21 @@
                         <a href="#" class="btn btn-default btn-sm">Login</a>
                         <a href="#" class="btn btn-success btn-sm">Sign Up</a>
                     </div>
+                </div> -->
                 </div>
             </header>
         </div>
     </div>
     <div class="container-fludic">
-        <div class=" well-lg cs-slide1">
+        <div class="well-lg cs-slide1 padding-lr-0">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h2 class="font-w3 text-peace hidden-xs">
+                    <div class="col-md-6 col-sm-8">
+                        <h1 class="font-w3 text-peace hidden-xs">
                         Pet parents like you have booked
                 <strong>millions of stay</strong> with our community of more than
                 <strong>20,000 sitters!</strong>
-                </h2>
+                </h1>
                         <div class="well-lg"></div>
                         <div class="panel panel-default">
                             <div class="panel-heading">Find the perfect pet sitter near you.</div>
@@ -71,17 +98,15 @@
                                     <button type="button" class="btn btn-default">Overnight</button>
                                     <button type="button" class="btn btn-success">Daycare</button>
                                 </div>
-                                <div class="btn-group" role="group">
-                                    <div class="btn btn-default">
-                                        <span class="location"></span>
-                                        <input type="text" placeholder="Zip code or address">
+                                <div class="input-group" role="group">
+                                    <span class="input-group-addon"><em class="location"></em></span>
+                                    <input class="form-control" type="text" placeholder="Zip code or address">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-calendar"></span> Start Date</button>
+                                        <button type="button" class="btn btn-default">
+                                            <span class="glyphicon glyphicon-calendar"></span> End Date</button>
                                     </div>
-                                    <button type="button" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-calendar"></span> Start Date</button>
-                                    <button type="button" class="btn btn-default">
-                                        <span class="glyphicon glyphicon-calendar"></span> End Date</button>
-                                    <!-- <input type="text" class="btn btn-default" placeholder="Start Date">
-                                    <input type="text" class="btn btn-default" placeholder="End Date"> -->
                                 </div>
                                 <br>
                                 <button type="button" class="btn btn-black text-uppercase">Find a sitter</button>
@@ -92,28 +117,30 @@
                 </div>
             </div>
         </div>
-        <div class="well">
+        <div class="well padding-lr-0">
             <div class="container center-block text-center">
                 <h2 class="text-black">A cozy home with a loving sitter</h2>
                 <p>With DogVacay, your per stays in a sitter's home or yours, whether you're travelling or just out for the day. Here's how it works.</p>
                 <div class="well-lg"></div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <img alt="" src="thumb/thumb1.png" />
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
+                        <img class="img-responsive" alt="" src="images/browse1.png" />
                         <h4 class="text-success text-uppercase margin-bottom-0">
                         Browse Sitters
                         </h4>
                         <small class="">Near You</small>
+                        <span class="hidden-xs hidden-sm cs-arrow"></span>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <img alt="" src="thumb/thumb2.png" />
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
+                        <img class="img-responsive" alt="" src="images/browse2.png" />
                         <h4 class="text-success text-uppercase margin-bottom-0">
                         Book and pay
                         </h4>
                         <small class="">All online</small>
+                        <span class="hidden-xs hidden-sm cs-arrow"></span>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
-                        <img alt="" src="thumb/thumb3.png" />
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
+                        <img class="img-responsive" alt="" src="images/browse3.png" />
                         <h4 class="text-success text-uppercase margin-bottom-0">
                         Your best friend enjoys
                         </h4>
@@ -124,6 +151,7 @@
                 <a class="btn btn-black text-uppercase" title="" href="#">Find a sitter</a>
                 <div class="well-lg"></div>
             </div>
+            <span class="cs-arrow-d"></span>
         </div>
         <div class="container center-block text-center">
             <h2 class="text-success">Meet the animal lovers who will treat your pet like family</h2>
@@ -131,10 +159,11 @@
             <br>
         </div>
         <div class="cs-slide2">
-            <div class="well">
+            <div class="well padding-lr-0">
                 <div class="container center-block text-center text-peace">
                     <h3>Los Angeles, CA</h3>
                     <h3 class="font-w3 margin-top-0">Reggie of Blessful Doggie Retreat</h3>
+                    <hr class="cs-foot-print" />
                     <br>
                     <img class="img-circle" alt="" src="thumb/thumb1.jpg" />
                     <br>
@@ -143,38 +172,40 @@
                 </div>
             </div>
         </div>
-        <div class="container center-block text-center">
-            <h2 class="text-success">Check out these top-rated sitters near you</h2>
-            <p>We have the right sitter for every type of pup, from puppies to seniors to those with special needs.</p>
-            <br>
-            <img class="" alt="" src="thumb/thumb2.jpg" />
-            <br>
-            <h3 class="text-black">125,5615-Star Dog Boarding Experience Through DogVacay!</h3>
-            <div class="well-lg"></div>
-            <a class="btn btn-success text-uppercase" title="" href="#">Find more sitter</a>
-            <div class="well-lg"></div>
+        <div class="well-lg padding-lr-0">
+            <div class="container center-block text-center">
+                <h2 class="text-success">Check out these top-rated sitters near you</h2>
+                <p>We have the right sitter for every type of pup, from puppies to seniors to those with special needs.</p>
+                <br>
+                <img class="img-responsive" alt="" src="thumb/thumb2.jpg" />
+                <br>
+                <h3 class="text-black">125,5615-Star Dog Boarding Experience Through DogVacay!</h3>
+                <div class="well-lg"></div>
+                <a class="btn btn-success text-uppercase" title="" href="#">Find more sitter</a>
+                <div class="well-lg"></div>
+            </div>
         </div>
-        <div class="well">
+        <div class="well padding-lr-0">
             <div class="container center-block text-center">
                 <h2 class="text-success">DogVacay Peace of Mind Promise</h2>
                 <p>We go to extra miles to ensure your pets' safety and you peace of mind</p>
                 <div class="well-lg"></div>
                 <div class="row">
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
                         <img alt="" src="images/phone.png" />
                         <h4 class="text-black text-uppercase margin-bottom-0">
                         24/7 Customer Support
                         </h4>
                         <small class="">We're here for you via phone, email, or chat - whenever you need it</small>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
                         <img alt="" src="images/dog.png" />
                         <h4 class="text-black text-uppercase margin-bottom-0">
                         Premium Pet Insurance
                         </h4>
                         <small class="">We're here for you via phone, email, or chat - whenever you need it</small>
                     </div>
-                    <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="col-md-4 col-sm-4 col-xs-12 margin-t1">
                         <img alt="" src="images/camera.png" />
                         <h4 class="text-black text-uppercase margin-bottom-0">
                         Daily Photo Updates
@@ -183,10 +214,139 @@
                     </div>
                 </div>
                 <div class="well-lg"></div>
-                <a class="btn btn-black text-uppercase" title="" href="#">Find a sitter</a>
-                <div class="well-lg"></div>
             </div>
         </div>
+        <div class="well-lg cs-slide3 padding-lr-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="well-lg"></div>
+                        <div class="panel panel-success text-peace">
+                            <div class="panel-heading">
+                                <em class="cs-arrow-r hidden-xs hidden-sm"></em>
+                                <span>We'r here to help</span>
+                                <br> Need a last-minute sitter? Have a pup that needs extra attention? Our Concierge team is always here to help you find the perfect person to watch after your pet.
+                                <br>
+                                <br>
+                                <div class="btn-block">
+                                    <a class="btn btn-black text-uppercase" title="" href="#">Contact 
+                                Us</a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        <div class="well-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="well padding-lr-0">
+            <div class="container center-block text-left">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3 col-xs-12 cs-rel text-right">
+                        <img class="hidden-xs hidden-sm cs-sub-img" alt="" src="images/dot.png" />
+                    </div>
+                    <div class="col-md-6 col-sm-8 col-xs-12">
+                        <h2 class="text-success">Keep in touch</h2>
+                        <p>Sign up for email updates on products offers and discounts</p>
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="subscribe" class="sr-only">Your Email</label>
+                                <input id="subscribe" type="text" class="form-control" placeholder="Your Email">
+                            </div>
+                            <button type="submit" class="btn btn-black">Go</button>
+                        </form>
+                    </div>
+                    <div class="col-md-2 col-sm-1 col-xs-12"></div>
+                </div>
+            </div>
+        </div>
+        <div class="well-lg padding-lr-0">
+            <div class="container">
+                <footer class="footer">
+                    <div class="row font-w3">
+                        <div class="col-md-3 col-xs-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-success"><b>Help</b></span>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Support Center</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">How it Works</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Contact Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Concierge</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-success"><b>Hosting</b></span>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Become a Sitter</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">How Hosting Works</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Hosting Tips</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Hosting Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-success"><b>Company</b></span>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">About Us</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Careers</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Mobile</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted" title="" href="#">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-xs-6">
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-success"><b>Social Media</b></span>
+                                </li>
+                                <li>
+                                    <a class="text-muted cs-fb" title="" href="#">Facebook</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted cs-tw" title="" href="#">Twitter</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted cs-g" title="" href="#">Google</a>
+                                </li>
+                                <li>
+                                    <a class="text-muted cs-ins" title="" href="#">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <hr>
+        <div class="well-lg padding-lr-0 text-center">&copy; Dogvacy All right reserved</div>
     </div>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

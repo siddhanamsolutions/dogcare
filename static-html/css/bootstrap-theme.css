@@ -403,6 +403,18 @@ fieldset[disabled] .btn-black.active {
   background-repeat: repeat-x;
   color:#80a024;
 }
+.navbar-nav{margin-top:10px;}
+.navbar-nav > li > a{padding:6px 12px;}
+.navbar-success .navbar-toggle {
+  border-color: #82a23e;
+}
+.navbar-success .navbar-toggle:hover,
+.navbar-success .navbar-toggle:focus {
+  background-color: #fefefe;
+}
+.navbar-success .navbar-toggle .icon-bar {
+  background-color: #82a23e;
+}
 .navbar-default {
   background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
   background-image:      -o-linear-gradient(top, #fff 0%, #f8f8f8 100%);
