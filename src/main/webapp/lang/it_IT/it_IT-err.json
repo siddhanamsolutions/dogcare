@@ -1,0 +1,22 @@
+{
+    "e000": {"msg": "errore sconosciuto", "desc": ""}, 
+            
+    "eCNF001": {"msg": "Questa lingua non è ancora supportata", "desc": ""},
+    
+    "eC_FORM_INVALID": {"msg": "dati non validi", "desc": ""},
+    "eC_FORM_REQUIRED": {"msg": "dati obbligatori", "desc": ""},
+    "eC_FORM_MINLENGTH": {"msg": "lunghezza minima", "desc": ""},
+    "eC_FORM_MAXLENGTH": {"msg": "lunghezza massima", "desc": ""},
+    
+    "RES_L100":{"msg": "Italian-Invalid User name or password...", "desc": ""},
+    "RES_L200":{"msg": "Italian-Login successfull...", "desc": ""},
+
+    "RES_UA200":{"msg": "User Added successfully...", "desc": ""},
+    "RES_UA100":{"msg": "Login Successful...", "desc": ""},
+	
+    "RES_UU200":{"msg": "User Updated Successfully...", "desc": ""},
+    "RES_UU100":{"msg": "Login Successful...", "desc": ""},
+	
+    "RES_UD200":{"msg": "User Deleted Successfully..", "desc": ""},
+    "RES_UD100":{"msg": "Error in Deletion...", "desc": ""}
+}

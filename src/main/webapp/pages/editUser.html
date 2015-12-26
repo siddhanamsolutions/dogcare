@@ -1,0 +1,77 @@
+<h1>Add/Edit User</h1>
+<div class="row">
+<div class="col-sm-7">
+<form ng-submit="addUser()" name="addUserForm" role="form" class="form-horizontal">
+<div  ng-repeat="field in userFields">
+
+	<div class="form-group" ng-if="field.type != 'select' " >
+			<label for="{{field.labelName}}">{{field.labelName}}</label>
+       		 <input class="form-control" type="{{ field.type }}" placeholder="{{ field.name }}" ng-model="models[field.name]">
+	</div>
+
+	<div class="form-group" ng-if="field.type == 'select' " >
+			<label for="{{field.labelName}}">{{field.labelName}}</label>
+       		<select  class="form-control" ng-model="models[field.name]"
+           		 ng-options="value as value.name for value in field.values">
+            <option value="">-select-</option>
+       		 </select>
+	</div>
+
+</div>
+  
+   <!-- Address- html code dynamic generator -->
+    <hr>
+   
+   <div id="panelAddressGroup1" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Address Group 1 &mdash;
+                <input type="radio" name="isPrimaryAddressGroup" id="isPrimaryAddressGroup" value="addressGroup1" checked> Primary
+                <span class="pull-right"><a class="btn btn-primary btn-xs pull-right" href="#" title="Add new address"><span class="fa fa-plus"></span></a></span>
+            </h3>
+        </div> 
+    <div class="panel-body" ng-repeat="field in addressFields">
+        <div class="form-group" ng-if="field.type != 'select' " >
+		  	<label for="{{field.labelName}}">{{field.labelName}}</label>
+        	<input class="form-control" type="{{ field.type }}" placeholder="{{ field.name }}" ng-model="models[field.name]">
+    	</div>
+
+        <div class="form-group" ng-if="field.type == 'select' " >
+				<label for="{{field.labelName}}">{{field.labelName}}</label>
+       			<select  class="form-control" ng-model="models[field.name]"
+            		ng-options="value as value.name for value in field.values">
+            		<option value="">-select-</option>
+        		</select>
+		</div>
+    
+     </div>   <!-- panel-body -->
+    </div>   <!-- panel -->  
+    
+      <!-- Phone- html code dynamic generator -->
+      
+       <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Phone 1 &mdash;
+                <input type="radio" name="isPrimaryPhone" id="isPrimaryPhone" value="phoneGroup1" checked> Primary
+                <span class="pull-right"><a class="btn btn-primary btn-xs pull-right" href="#" title="Add new phone number"><span class="fa fa-plus"></span></a></span>
+            </h3>
+        </div>
+      <div class="panel-body" ng-repeat="field in phoneFields">
+      		 <div class="form-group" ng-if="field.type != 'select' " >
+		  		<label for="{{field.labelName}}">{{field.labelName}}</label>
+        		<input class="form-control" type="{{ field.type }}" placeholder="{{ field.name }}" ng-model="models[field.name]">
+    		</div>
+
+        	<div class="form-group" ng-if="field.type == 'select' " >
+					<label for="{{field.labelName}}">{{field.labelName}}</label>
+       				<select  class="form-control" ng-model="models[field.name]"
+            			ng-options="value as value.name for value in field.values">
+            			<option value="">-select-</option>
+        			</select>
+			</div>
+     </div>   <!-- panel-body -->
+    </div>   <!-- panel -->  
+
+  <p><button type="submit" >Submit</button></p>            
+</form>
+</div>
+</div>

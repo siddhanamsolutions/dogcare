@@ -1,0 +1,23 @@
+<h1>User List</h1>
+		<div class="col-sm-6">
+		<table>
+			<tr><td>
+			<input type="text" data-ng-model="search" placeholder="Seach Text"	name="searchText" required autofocus class="form-control">
+			</td><td><input type="button" value="Search" data-ng-click="searchUser()" class="btn btn-default"></td>
+		</table>
+		</div>
+<hr />
+<table ng-table="tableParams" class="table table-bordered table-hover table-striped">
+	<tr ng-repeat="order in $data">
+		<td data-title="'S. No.'">{{$index+1}}</td>
+		<td data-title="'SSN#'"><a href="">{{order.ssn}}</a></td>
+		<td data-title="'User Name'">{{order.name}}</td>
+		<td data-title="'First Name'">{{order.firstName}}</td>
+		<td data-title="'Last Name'">{{order.lastName}}</td>
+		<td data-title="'Email Id'">{{order.email}}</td>
+		<td data-title="'Address'">{{order.userAddresses[0].line1}}&nbsp;{{order.userAddresses[0].line2}}</td>
+		<td data-title="'Phone Number'">{{order.userPhone[0].phoneNumber}}</td>
+		<td data-title="'Edit'"><a class="list-group-item" data-ng-click="editUser(order)" href=""><i class="fa fa-pencil fa-fw fa-lg"></i>&nbsp; </a></td>
+		<td data-title="'Delete'"><a class="list-group-item" data-ng-click="deleteUser(order.id)" href=""><i class="fa fa-trash-o fa-lg"></i></a></td>
+	</tr>
+</table>

@@ -1,0 +1,21 @@
+{
+    "e000": {"msg": "Unknown Error", "desc": ""},
+            
+    "eCNF001": {"msg": "This language is not supported yet", "desc": ""},
+    
+    "eC_FORM_INVALID": {"msg": "Data invalid", "desc": ""},
+    "RES_L100":{"msg": "Invalid User name or password...", "desc": ""},
+    "RES_L200":{"msg": "Login Successful...", "desc": ""},
+	
+	"RES_UA200":{"msg": "User Added successfully...", "desc": ""},
+    "RES_UA100":{"msg": "Error in updating user...", "desc": ""},
+	
+	 "RES_UU200":{"msg": "User Updated Successfully...", "desc": ""},
+    "RES_UU100":{"msg": "Error in updating user...", "desc": ""},
+	
+	 "RES_UD200":{"msg": "User Deleted Successfully..", "desc": ""},
+    "RES_UD100":{"msg": "Error in Deletion...", "desc": ""},
+	 
+	 "RES_US101":{"msg": "Error in Search please try again...", "desc": ""},
+	 "RES_US200":{"msg": "Search record displayed...", "desc": ""}
+}

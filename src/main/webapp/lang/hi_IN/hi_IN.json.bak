@@ -1,0 +1,42 @@
+{
+    "addUser": {
+        "pageHeader": {"label": "नए यूज़र", "place": ""},
+        "createUserButton": {"label": "यूज़र बना", "place": ""},
+        
+        
+        "firstName": {"label": "नाम", "place": "नाम"},
+        "middleName": {"label": "मध्य नाम", "place": "मध्य नाम"},
+        "lastName": {"label": "उपनाम", "place": "उपनाम"},
+        "ssn": {"label": "एस एस एन", "place": "एस एस एन"},
+        "name": {"label": "यूज़र नाम", "place": "यूज़र नाम"},
+        "password": {"label": "पासवर्ड", "place": "पासवर्ड"},
+        "email": {"label": "ई-मेल", "place": "ई-मेल"},
+        "gender": {"label": "लिंग", "place": "लिंग"},
+        "addressType": {"label": "पता प्ररूप", "place": "पता प्ररूप"},
+        "country": {"label": "देश", "place": "देश"},
+        "line1": {"label": "पता 1", "place": "पता 1"},
+        "line2": {"label": "पता 2", "place": "पता 1"},
+        "city": {"label": "शहर", "place": "शहर"},
+        "state": {"label": "राज्य", "place": "राज्य"},
+        "zip": {"label": "पिन कोड", "place": "पिन कोड"},
+        "phoneNumber": {"label": "फ़ोन नंबर", "place": "फ़ोन नंबर"},
+        "phoneType": {"label": "फ़ोन प्ररूप", "place": "फ़ोन प्ररूप"}
+    },
+    "login": {
+        "pageHeader": {"label": "लॉग इन", "place": ""},
+                
+        "userName": {"label": "यूज़र नाम", "place": "यूज़र नाम"},
+        "password": {"label": "पासवर्ड", "place": "पासवर्ड"},
+        "rememberMe": {"label": "मुझे याद रखें", "place": ""},
+
+        "loginButton": {"label": "लॉग इन करें", "place": ""}             
+    },
+            
+    "nav": {
+        "navAddUser": {"label": "नए यूज़र", "place": ""},    
+        "navHome": {"label": "होम", "place": ""},
+        "navAbout": {"label": "तकरीबन", "place": ""},
+        "navContact": {"label": "संपर्क", "place": ""},
+        "navLanguage": {"label": "भाषा", "place": ""}  
+    }
+}

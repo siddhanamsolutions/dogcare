@@ -1,0 +1,45 @@
+{
+    "addUser": {
+        "addHeader":{"label": "Aggiungi Utente", "place": ""},
+        "editHeader":{"label": "modifica Utente", "place": ""},
+        
+        "pageHeader": {"label": "Aggiungi Utente", "place": ""},
+        "createUserButton": {"label": "Creare", "place": ""},
+        
+        
+        "firstName": {"label": "Nome", "place": "Nomee"},
+        "middleName": {"label": "Secondo Nome", "place": "Secondo Nome"},
+        "lastName": {"label": "Cognome", "place": "Cognome"},
+        "ssn": {"label": "SSN", "place": "ssn"},
+        "name": {"label": "Nome utente", "place": "Nome utente"},
+        "password": {"label": "Password", "place": "Password"},
+        "email": {"label": "Email", "place": "Email"},
+        "gender": {"label": "Genere", "place": "Genere"},
+        "addressType": {"label": "Tipo di indirizzo", "place": "Tipo di indirizzo"},
+        "countryId": {"label": "Paese", "place": "Paese"},
+        "line1": {"label": "linea1", "place": "linea1"},
+        "line2": {"label": "linea2", "place": "linea2"},
+        "city": {"label": "Città", "place": "Città"},
+        "state": {"label": "Stato", "place": "Stato"},
+        "zip": {"label": "Codice Postale", "place": "Codice Postale"},
+        "phoneNumber": {"label": "Numero Di Telefono", "place": "Numero Di Telefono"},
+        "phoneType": {"label": "Tipo Phone", "place": "Tipo Phone"}
+    },
+    "login": {
+        "pageHeader": {"label": "Login", "place": ""},
+                
+        "userName": {"label": "Nome utente", "place": "Nome utente"},
+        "password": {"label": "Password", "place": "Password"},
+        "rememberMe": {"label": "ricordati di me", "place": "ricordati di me"},
+
+        "loginButton": {"label": "Login", "place": ""}          
+    },
+            
+    "nav": {
+        "navAddUser": {"label": "Aggiungi Utente", "place": ""},    
+        "navHome": {"label": "Casa", "place": ""},
+        "navAbout": {"label": "Su", "place": ""},
+        "navContact": {"label": "Contatto", "place": ""},
+        "navLanguage": {"label": "Lingua", "place": ""}  
+    }
+}

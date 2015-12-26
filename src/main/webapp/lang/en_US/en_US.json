@@ -1,0 +1,45 @@
+{
+    "addUser": {
+        "addHeader":{"label": "Add User", "place": ""},
+        "editHeader":{"label": "Edit User", "place": ""},
+        
+        "pageHeader": {"label": "Add User", "place": ""},
+        "createUserButton": {"label": "Create", "place": ""},
+        
+        
+        "firstName": {"label": "First Name", "place": "First Name"},
+        "middleName": {"label": "Middle Name", "place": "Middle Name"},
+        "lastName": {"label": "Last Name", "place": "Last Name"},
+        "ssn": {"label": "SSN", "place": "Social security code"},
+        "name": {"label": "User Name", "place": "user name"},
+        "password": {"label": "Password", "place": "Password"},
+        "email": {"label": "Email", "place": "Email"},
+        "gender": {"label": "Gender", "place": "Gender"},
+        "addressType": {"label": "Address Type", "place": "Address Type"},
+        "countryId": {"label": "Country", "place": "Country"},
+        "line1": {"label": "Line1", "place": "Line1"},
+        "line2": {"label": "Line2", "place": "Line2"},
+        "city": {"label": "City", "place": "City"},
+        "state": {"label": "State", "place": "State"},
+        "zip": {"label": "Postal Code", "place": "Postal Code"},
+        "phoneNumber": {"label": "Phone Number", "place": "Phone Number"},
+        "phoneType": {"label": "Phone Type", "place": "Phone Type"}
+    },
+    "login": {
+        "pageHeader": {"label": "Log In", "place": ""},
+                
+        "userName": {"label": "Username", "place": "First Name"},
+        "password": {"label": "Password", "place": "Password"},
+        "rememberMe": {"label": "Remember Me", "place": ""},
+
+        "loginButton": {"label": "Log in", "place": ""}  
+    },
+            
+    "nav": {
+        "navAddUser": {"label": "Add User", "place": ""},    
+        "navHome": {"label": "Home", "place": ""},
+        "navAbout": {"label": "About", "place": ""},
+        "navContact": {"label": "Contact", "place": ""},
+        "navLanguage": {"label": "Language", "place": ""}  
+    }
+}

@@ -1,0 +1,134 @@
+<h1>{{staticFields.pageHeader.labelName}}</h1>
+<div class="row">
+                <div class="col-sm-6">
+                                <hr>
+                                <div data-ng-show="error" class="alert alert-danger">
+                                                <button type="button" data-ng-click="error = null;" class="close">&times;</button>
+                                                <strong>Oh no!&nbsp;</strong><span data-ng-bind="error"></span>
+                                </div>
+                                <form ng-submit="addUser()" name="addUserForm" role="form"
+                                      class="form-horizontal" novalidate>
+                                        <div class="panel panel-primary">
+                                        <div class="panel-heading">
+                                              <span>User Details</span>  
+                                        </div>
+                                        <div class="panel-body"> 
+                                        <div ng-repeat="field in userFields">
+
+                                                <div data-ng-if="field.type != 'select' && field.type != 'radio' && $index != 0"
+                                                     class="form-group"
+                                                     ng-class="{ 'has-error': isInvalid(field.name) }">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <input  id ="{{ field.name }}"
+                                                                class="form-control" type="{{ field.type }}"
+                                                                placeholder="{{ field.place }}"  ng-required='{{ field.required }}' 
+                                                                ng-minlength='{{ field.minLength }}'
+                                                                ng-model="models[field.name]">
+                                                        <label class="control-label" data-validation="required"
+                                                               ng-show='isInvalid(field.name)'>Value of {{field.labelName}} is invalid..</label>
+                                                        
+                                                </div>
+
+                                                <div class="form-group" ng-if="field.type == 'select' ">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <select id ="{{ field.name }}"
+                                                                class="form-control" ng-model="models[field.name]" name ="{{field.name}}">
+                                                                <option value="">-- {{ field.place }} --</option>
+                                                                <option ng-repeat="opt in field.values" value="{{opt.value}}">{{ opt.name }}</option>
+                                                        </select>
+                                                </div>
+
+                                                <div class="form-group" ng-if="field.type == 'radio' ">
+                                                        <label>{{field.labelName}}</label>
+                                                        <div ng-repeat='radio in field.values'>
+                                                                <input type="radio" name="{{radio.name}}" value="{{radio.value}}"
+                                                                    class="" ng-model="models[field.name]"> {{radio.name}}
+
+                                                        </div>
+                                                </div>
+
+                                        </div>
+                                </div>
+                        </div>
+
+                                                <!-- Address- html code dynamic generator -->
+
+                        <div class="panel panel-primary" ng-repeat="addr in addrDetails" ng-init="outerIndex=$index">
+                                <div class="panel-heading">
+                                        <span>Address Details {{models['userAddresses'][outerIndex]['addressType']}}</span>
+                                        <span class="text-right" style="float: right; cursor: pointer;">
+                                            <i class="fa fa-plus" ng-click='addAddressPanel();'></i>
+                                        </span>
+                                        <span class="text-right" style="float: right; cursor: pointer; margin-right: 10px;">
+                                            <i class="fa fa-minus" ng-click='reomveAddressPanel();'></i>
+                                        </span>
+                                </div>
+                                <div class="panel-body">
+                                        <div ng-repeat="field in addr">
+                                                <div class="form-group" ng-if="field.type != 'select' && $index != 0">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <input class="form-control" type="{{ field.type }}"
+                                                                placeholder="{{ field.place }}" ng-model="models['userAddresses'][outerIndex][field.name]">
+                                                </div>
+
+                                                <div class="form-group" ng-if="field.type == 'select' ">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <select
+                                                                class="form-control" ng-model="models['userAddresses'][outerIndex][field.name]"
+                                                                name="{{field.name}}">
+                                                                <option value="">-- {{ field.place }} --</option>
+                                                                <option ng-repeat="opt in field.values" value="{{opt.value}}">{{ opt.name }}</option>
+                                                        </select>
+                                                </div>
+
+                                        </div>
+                                        <!-- ng-repeat -->
+                                </div>
+                                <!-- panel-body -->
+                                
+                                                </div>
+                                                <!-- panel -->
+
+                                                <!-- Phone- html code dynamic generator -->
+
+                        <div class="panel panel-primary" ng-repeat="phone in phoneDetails"
+                             ng-init="outerIndex=$index" on-finish-render >
+                                <div class="panel-heading">
+                                        <span>Phone Details {{$index + 1}}</span>
+                                        <span class="text-right" style="float: right; cursor: pointer;">
+                                                <i class="fa fa-plus" ng-click='addPhonePanel();'></i>
+                                        </span>
+                                        <span class="text-right" style="float: right; cursor: pointer; margin-right: 10px;">
+                                            <i class="fa fa-minus" ng-click='reomvePhonePanel();'></i>
+                                        </span>
+                                </div>
+                                <div class="panel-body">
+                                        <div class="" ng-repeat="field in phone">
+                                                <div class="form-group" ng-if="field.type != 'select'  && $index != 0">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <input
+                                                                class="form-control" type="{{ field.type }}"
+                                                                placeholder="{{ field.place }}" ng-model="models['userPhone'][outerIndex][field.name]">
+                                                </div>
+
+                                                <div class="form-group" ng-if="field.type == 'select' ">
+                                                        <label for="{{field.labelName}}">{{field.labelName}}</label> 
+                                                        <select
+                                                                class="form-control" ng-model="models['userPhone'][outerIndex][field.name]"
+                                                                name="{{field.name}}">
+                                                                <option value="">-- {{ field.place }} --</option>
+                                                                <option ng-repeat="opt in field.values" value="{{opt.value}}">{{ opt.name }}</option>
+                                                        </select>
+                                                </div>
+                                        </div>
+                                        <!-- ng-repeat -->
+                                </div>
+                                <!-- panel-body -->
+                        </div>
+                        <!-- panel -->
+
+                        <button type="submit" class="btn btn-primary form-group" ng-click="postData()">{{staticFields.createUserButton.labelName}}</button>
+                        <button type="submit" class="btn btn-info form-group" ng-click="editUser()">Edit</button>
+                </form>
+        </div>
+</div>

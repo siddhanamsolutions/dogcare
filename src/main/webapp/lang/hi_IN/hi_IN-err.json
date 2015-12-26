@@ -1,0 +1,25 @@
+{
+    "e000": {"msg": "अज्ञात गलती", "desc": ""},
+            
+    "eCNF001": {"msg": "इस भाषा का अब उपयोग नहीं किया जा सकता है", "desc": ""},
+    
+    "eC_FORM_INVALID": {"msg": "डेटा अमान्य", "desc": ""},
+    "eC_FORM_REQUIRED": {"msg": "अनिवार्य डेटा", "desc": ""},
+    "eC_FORM_MINLENGTH": {"msg": "कम से कम लंबाई", "desc": ""},
+    "eC_FORM_MAXLENGTH": {"msg": "ज्यादा से ज्यादा लंबाई", "desc": ""},
+
+    "RES_L100":{"msg": "Invalid User name or password...", "desc": ""},
+    "RES_L200":{"msg": "Login Successful...", "desc": ""},
+	
+
+	"RES_UA200":{"msg": "User Added successfully...", "desc": ""},
+    "RES_UA100":{"msg": "Error in updating user...", "desc": ""},
+	
+
+	 "RES_UU200":{"msg": "User Updated Successfully...", "desc": ""},
+    "RES_UU100":{"msg": "Error in updating user...", "desc": ""},
+	
+
+	 "RES_UD200":{"msg": "User Deleted Successfully..", "desc": ""},
+    "RES_UD100":{"msg": "Error in Deletion...", "desc": ""}
+}
