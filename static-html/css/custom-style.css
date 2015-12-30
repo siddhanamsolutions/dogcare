@@ -95,17 +95,22 @@ body{color:#888888;font-family: 'Open Sans', sans-serif;}
 .header .dropdown-toggle .caret{margin-left:10px;}
 
 .loginForm{width:360px;margin:15px auto;padding:0 15px;}
-.form-control, .form-group .btn{-webkit-box-shadow:0 2px 6px -2px rgba(0, 0, 0, 0.50);
+.form-control, .form-group .btn, .loginForm .dropdown-toggle{-webkit-box-shadow:0 2px 6px -2px rgba(0, 0, 0, 0.50);
           box-shadow:0 2px 6px -2px rgba(0, 0, 0, 0.50);
   -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
           transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 	-webkit-border-radius:3px !important;-moz-border-radius:3px !important;border-radius:3px !important;}
-
+.loginForm .dropdown-toggle{width:100%;background:#fff;border:1px solid #ccc;text-align:right;}
+.loginForm .dropdown-toggle em{float:left;}
+.loginForm .dropdown-menu > li > a{color:#888888;}
+.loginForm .thumbnail{width:235px;margin:0 auto;}
+.loginForm .thumbnail > img{width:100%;}
 
 
 
 	/******/
-	@media (max-width:420px){
+	@media (max-width:520px){
 		.loginForm{width:320px;}
+    .cs-foot-print{width:258px;}
 	}
