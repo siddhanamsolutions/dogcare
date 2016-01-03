@@ -56,7 +56,7 @@
                     <div id="sidebar-wrapper">
                         <p class="font-w3 font-s-12">Complete 7 Sections to create your sitter profile</p>
                         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                            <li class="active">
+                            <li>
                                 <a href="about-you.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> About You</a>
                             </li>
                             <li>
@@ -74,7 +74,7 @@
                             <li>
                                 <a href="description.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-wrench fa-stack-1x "></i></span>Description</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="photos.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-server fa-stack-1x "></i></span>Photos</a>
                             </li>
                         </ul>
@@ -84,125 +84,40 @@
                     <div id="page-content-wrapper">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 class="margin-top-0">About You</h2>
+                                <h2 class="margin-top-0">Photos</h2>
                                 <div class="well row">
-                                    <h4 class="text-success margin-top-0">Personal Information</h4>
-                                    <p class="margin-bottom-0">We will never share your info with any third-party company.</p>
-                                    <hr>
                                     <form class="font-w3">
-                                        <div class="form-group col-md-6">
-                                            <input type="fname" class="form-control" placeholder="First Name">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="lname" class="form-control" placeholder="Last Name">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name="18plus"> I am 18 years of age or older
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <div class="dropdown text-left">
-                                                <button type="button" class="btn dropdown-toggle font-w3" data-toggle="dropdown">
-                                                    <em>Country</em>
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">USA</a></li>
-                                                    <li><a href="#">India</a></li>
-                                                </ul>
-                                            </div>
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-sm-8 col-md-9">
-                                            <input type="homeAddr" class="form-control" placeholder="Home Address">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-4 col-md-3">
-                                            <input type="apt" class="form-control" placeholder="Apt #">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-sm-3 col-md-3">
-                                            <input type="zip" class="form-control" placeholder="Zip Code">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-6 col-md-6">
-                                            <input type="city" class="form-control" placeholder="City">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-3 col-md-3">
-                                            <div class="dropdown text-left">
-                                                <button type="button" class="btn dropdown-toggle font-w3" data-toggle="dropdown">
-                                                    <em>State</em>
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">SC</a></li>
-                                                </ul>
-                                            </div>
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-
-                                        <div class="form-group col-md-6">
-                                            <input type="mphone" class="form-control" placeholder="(018)009-0000">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="aphone" class="form-control" placeholder="Alternate Phone">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name="permission"> I authorize DogVacay to send text messages to my mobile phone per the <a title="Terms and Conditions" href="#">Terms and Conditions.</a>
-                                            </label>
-                                        </div>
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-camera"></span> Choose Cover Photo</button>
                                         <hr>
-                                        <p class="font-s-12"><strong>What are your goals for being a Sitter on DogVacay?</strong></p>
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-camera"></span> Choose Profile Photo</button>
+                                        <h5>
+                                            <strong>Profile Photo Requirements</strong>
+                                        </h5>
+                                        <h6>
+                                            <span class="text-success glyphicon glyphicon-ok"></span> Choose a close-up view of your face that makes it easy to identify you.
+                                        </h6>
+                                        <h6>
+                                            <span class="text-danger glyphicon glyphicon-remove"></span> Don't use pictures of dogs for your photo.
+                                        </h6>
+                                        <h6>
+                                            <span class="text-danger glyphicon glyphicon-remove"></span> Don't use a group photo that makes it hard to identify you.
+                                        </h6>
 
-
+                                        <hr>
+                                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-camera"></span> Choose Listing Photo</button>
+                                        <h5>
+                                            <strong>Listing Photo Requirements (min. 3 photos)</strong>
+                                        </h5>
+                                        <h6>If providing services in your home, add at least 3 photos that show:</h6>
+                                        <ul>
+                                            <li>Where pets will hang out.</li>
+                                            <li>Where you'll feed them.</li>
+                                            <li>Where they can sleep if you're boarding them overnight.</li>
+                                        </ul>
+                                        <h6>For all other services, add at least 3 photos of fun activities or places you take dogs.</h6>
                                         <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm curious and want to try it out
-                                            </label>
+                                            <button class="btn btn-success" type="button">Submit  Your Profile for Review</button>
                                         </div>
-
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I want dogs in my life
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'd earn extra income
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm saving up for a special occasion
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm interested in pursuing pet care full-time
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I recently lost a pet and miss having it around
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <button class="btn btn-success" type="button">Next: Experience &amp; Slills</button>
-                                        </div>
-
-
-
                                     </form>
                                 </div>
                             </div>

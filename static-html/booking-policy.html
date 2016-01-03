@@ -56,7 +56,7 @@
                     <div id="sidebar-wrapper">
                         <p class="font-w3 font-s-12">Complete 7 Sections to create your sitter profile</p>
                         <ul class="sidebar-nav nav-pills nav-stacked" id="menu">
-                            <li class="active">
+                            <li>
                                 <a href="about-you.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-dashboard fa-stack-1x "></i></span> About You</a>
                             </li>
                             <li>
@@ -68,7 +68,7 @@
                             <li>
                                 <a href="services-you-offer.html"> <span class="fa-stack fa-lg pull-left"><i class="fa fa-cart-plus fa-stack-1x "></i></span>Services You Offer</a>
                             </li>
-                            <li>
+                            <li class="active">
                                 <a href="booking-policy.html"><span class="fa-stack fa-lg pull-left"><i class="fa fa-youtube-play fa-stack-1x "></i></span>Booking Policy</a>
                             </li>
                             <li>
@@ -84,125 +84,127 @@
                     <div id="page-content-wrapper">
                         <div class="row">
                             <div class="col-lg-12">
-                                <h2 class="margin-top-0">About You</h2>
+                                <h2 class="margin-top-0">Booking Policy</h2>
                                 <div class="well row">
-                                    <h4 class="text-success margin-top-0">Personal Information</h4>
-                                    <p class="margin-bottom-0">We will never share your info with any third-party company.</p>
+                                    <h4 class="text-success margin-top-0">Booking Requirements</h4>
                                     <hr>
                                     <form class="font-w3">
-                                        <div class="form-group col-md-6">
-                                            <input type="fname" class="form-control" placeholder="First Name">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="lname" class="form-control" placeholder="Last Name">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
                                         <div class="form-group col-md-12">
                                             <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name="18plus"> I am 18 years of age or older
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <div class="dropdown text-left">
-                                                <button type="button" class="btn dropdown-toggle font-w3" data-toggle="dropdown">
-                                                    <em>Country</em>
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">USA</a></li>
-                                                    <li><a href="#">India</a></li>
-                                                </ul>
-                                            </div>
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-sm-8 col-md-9">
-                                            <input type="homeAddr" class="form-control" placeholder="Home Address">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-4 col-md-3">
-                                            <input type="apt" class="form-control" placeholder="Apt #">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-sm-3 col-md-3">
-                                            <input type="zip" class="form-control" placeholder="Zip Code">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-6 col-md-6">
-                                            <input type="city" class="form-control" placeholder="City">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-sm-3 col-md-3">
-                                            <div class="dropdown text-left">
-                                                <button type="button" class="btn dropdown-toggle font-w3" data-toggle="dropdown">
-                                                    <em>State</em>
-                                                    <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a href="#">SC</a></li>
-                                                </ul>
-                                            </div>
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-
-                                        <div class="form-group col-md-6">
-                                            <input type="mphone" class="form-control" placeholder="(018)009-0000">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-                                        <div class="form-group col-md-6">
-                                            <input type="aphone" class="form-control" placeholder="Alternate Phone">
-                                            <span class="error font-w3 text-danger"></span>
-                                        </div>
-
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name="permission"> I authorize DogVacay to send text messages to my mobile phone per the <a title="Terms and Conditions" href="#">Terms and Conditions.</a>
+                                                <input type="checkbox" name=""> I will require a Meet-n-Greet before accepting bookings
                                             </label>
                                         </div>
                                         <hr>
-                                        <p class="font-s-12"><strong>What are your goals for being a Sitter on DogVacay?</strong></p>
-
-
+                                        <p class="font-s-12"><strong>Minimum notice required for booking:</strong></p>
                                         <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm curious and want to try it out
-                                            </label>
+                                            <select class="form-control" name="availibility">
+                                                <option value="-1">-Please Select-</option>
+                                                <option vlaue="1">1</option>
+                                            </select>
+                                            <span class="error font-w3 text-danger"></span>
                                         </div>
-
+                                        <hr>
+                                        <h6 class="font-s-12">DogVacay's cancellation policy for boarding is full refund with 4 days notice and 50% refund after.</h6>
+                                        <hr>
+                                        <h6 class="font-s-12">DogVacay's cancellation policy for daycare is full refund with 2 days notice and 50% refund after.</h6>
+                                        <br>
+                                        <br>
+                                        <h4 class="text-success">Special Accommodations</h4>
+                                        <hr>
+                                        <p class="font-s-12">
+                                            <strong>Highlight these special accommodations on your profile:</strong>
+                                        </p>
                                         <div class="form-group col-md-12">
                                             <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I want dogs in my life
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'd earn extra income
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm saving up for a special occasion
-                                            </label>
-                                        </div>
-                                        <div class="form-group col-md-12">
-                                            <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I'm interested in pursuing pet care full-time
+                                                <input type="checkbox" name=""> Pets recovering from surgery
                                             </label>
                                         </div>
                                         <div class="form-group col-md-12">
                                             <label class="control-label font-w3 font-s-12">
-                                                <input type="checkbox" name=""> I recently lost a pet and miss having it around
+                                                <input type="checkbox" name=""> Pets that require medicine
                                             </label>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <button class="btn btn-success" type="button">Next: Experience &amp; Slills</button>
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Separation anxiety
+                                            </label>
                                         </div>
-
-
-
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Aggressive behavior
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Leash pulling
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Pets that are not house-trained yet
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Advanced senior issues, such as dementia, incontinence, etc.
+                                            </label>
+                                        </div>
+                                        <h4 class="text-success">Sizes Accepted</h4>
+                                        <hr>
+                                        <p class="font-s-12">
+                                            <strong>Select any sizes of dogs you can accept:</strong>
+                                        </p>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Small, 1-20 lbs
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Medium, 20-40 lbs
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Large, 40-80 lbs
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Extra Large, over 80 lbs
+                                            </label>
+                                        </div>
+                                        <h4 class="text-success">Ages Accepted</h4>
+                                        <hr>
+                                        <p class="font-s-12">
+                                            <strong>Select any ages of dogs you can accept:</strong>
+                                        </p>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Puppy,
+                                                <2 years </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Adults, 2-6 years old
+                                            </label>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <label class="control-label font-w3 font-s-12">
+                                                <input type="checkbox" name=""> Senior dogs, 7 years and older
+                                            </label>
+                                        </div>
+                                        <h4 class="text-success">Breed Restrictions</h4>
+                                        <hr>
+                                        <p class="font-s-12">
+                                            <strong>List any specific breeds you are NOT comfortable working with:</strong>
+                                        </p>
+                                        <div class="form-group col-md-12">
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                            <button class="btn btn-success" type="button">Next: Description</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
