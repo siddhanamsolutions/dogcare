@@ -94,6 +94,12 @@ body{color:#888888;font-family: 'Open Sans', sans-serif;}
 
 
 
+.dv-services > h4{margin-bottom:20px;}
+.dv-service-img{margin:0 20px 0 0;}
+.dv-service-img img{width:100px;height:100px;}
+.dv-service-text{padding:0 0 0 20px;}
+.dv-service-text .btn{margin:10px 0 0 0;}
+
 
 
 /**
