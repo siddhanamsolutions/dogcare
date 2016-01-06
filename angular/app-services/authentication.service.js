@@ -17,11 +17,27 @@
 
         function Login(userData, callback) {
 
+            /* Dummy authentication for testing, uses $timeout to simulate api call
+             ----------------------------------------------*/
+            $timeout(function () {
+                var response;
+                UserService.GetByUsername(userData.username)
+                    .then(function (user) {
+                        if (user !== null && user.password === userData.password) {
+                            response = { success: true };
+                        } else {
+                            response = { success: false, message: 'Username or password is incorrect' };
+                        }
+                        callback(response);
+                    });
+            }, 1000);
 
-            $http.post('/api/authenticate', userData)
-                .success(function (response) {
-                    callback(response);
-                });
+            /* Use this for real authentication
+             ----------------------------------------------*/
+            //$http.post('/api/authenticate', userData)
+            //    .success(function (response) {
+            //        callback(response);
+            //    });
 
         }
 
