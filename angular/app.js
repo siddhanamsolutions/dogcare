@@ -27,7 +27,7 @@
                 controllerAs: 'vm'
             })
 
-            .otherwise({ redirectTo: '/login' });
+            .otherwise({ redirectTo: '/' });
     }
 
     run.$inject = ['$rootScope', '$location', '$cookieStore', '$http'];
@@ -50,7 +50,7 @@
 
 })();
 
-
+var restApi = "http://localhost:3000";
 // Base64 encoding service used by AuthenticationService
 var Base64 = {
 

@@ -3,12 +3,13 @@
 
     angular
         .module('app')
-        .factory('UserService', UserService);
+        .factory('SignUpService', SignUpService);
 
-    UserService.$inject = ['$http'];
-    function UserService($http) {
+    SignUpService.$inject = ['$http'];
+    function SignUpService($http) {
         var service = {};
 
+        service.getSignUpRoot = getSignUpRoot;
         service.GetAll = GetAll;
         service.GetById = GetById;
         service.GetByUsername = GetByUsername;
@@ -18,41 +19,45 @@
 
         return service;
 
+        function getSignUpRoot(){
+            return $http.get(restApi+'/signUpRoot').then(handleSuccess, handleError('Error getting SignUpRootPageContent'));
+        }
+
         function GetAll() {
-            return $http.get('/api/users').then(handleSuccess, handleError('Error getting all users'));
+            return $http.get(restApi+'/api/users').then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetById(id) {
-            return $http.get('/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
+            return $http.get(restApi+'/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
         function GetByUsername(username) {
-            return $http.get('/api/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get(restApi+'/api/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
         }
 
-        function Create(userData) {
-            return $http.post('/api/users', userData).then(handleSuccess, handleError('Error creating user'));
+        function Create(user) {
+            return $http.post(restApi+'/api/users', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         function Update(user) {
-            return $http.put('/api/users/' + user.id, user).then(handleSuccess, handleError('Error updating user'));
+            return $http.put(restApi+'/api/users/' + user.id, user).then(handleSuccess, handleError('Error updating user'));
         }
 
         function Delete(id) {
-            return $http.delete('/api/users/' + id).then(handleSuccess, handleError('Error deleting user'));
+            return $http.delete(restApi+'/api/users/' + id).then(handleSuccess, handleError('Error deleting user'));
         }
 
-        // private functions
+            // private functions
 
-        function handleSuccess(res) {
-            return res.data;
+            function handleSuccess(res) {
+                return res.data;
+            }
+
+            function handleError(error) {
+                return function () {
+                    return { success: false, message: error };
+                };
+            }
         }
 
-        function handleError(error) {
-            return function () {
-                return { success: false, message: error };
-            };
-        }
-    }
-
-})();
+    })();

@@ -10,7 +10,7 @@
                     <hr class="cs-foot-print" />
                 </div>
                 <div ng-class="{ 'alert': flash, 'alert-success': flash.type === 'success', 'alert-danger': flash.type === 'error' }" ng-if="flash" ng-bind="flash.message"></div>
-                <form class="font-w3" name="form" ng-submit="vm.login()" role="form">
+                <form class="font-w3" name="form" ng-controller="LoginController" ng-submit="vm.login()" role="form">
                     <div class="form-group form-group-lg" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
                         <input type="email" class="form-control input-lg" name="username" id="username" ng-model="vm.username" required placeholder="Email">
                         <span class="error font-w3 text-danger" ng-show="form.username.$dirty && form.username.$error.required">Username is required</span>
