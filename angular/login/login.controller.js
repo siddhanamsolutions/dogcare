@@ -11,10 +11,10 @@
 
         vm.login = login;
 
-        (function initController() {
+        /*(function initController() {
             // reset login status
             AuthenticationService.ClearCredentials();
-        })();
+        })();*/
 
         function login() {
             vm.dataLoading = true;

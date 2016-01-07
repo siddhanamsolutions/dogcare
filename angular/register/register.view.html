@@ -41,25 +41,13 @@
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6">
                     <div class="text-center text-peace">
-                        <h3 class="font-w3">Benefits of Dog</h3>
-                        <hr class="cs-foot-print" />
-                        <p class="font-w3">Stay at a real home - not a cage at the kennel</p>
-                        <p class="font-w3">Love and attention from a qualified host</p>
-                        <p class="font-w3">Their very own DogVacay</p>
-                        <h3 class="font-w3">Benefits for Dog Parents</h3>
-                        <hr class="cs-foot-print" />
-                        <p class="font-w3">Insurance, photos updates, & customer support</p>
-                        <p class="font-w3">Online scheduling and payments</p>
-                        <h3 class="font-w3">Benefits for Hosts</h3>
-                        <hr class="cs-foot-print" />
-                        <p class="font-w3">Make a living watching puppies</p>
-                        <p class="font-w3">Free to create a profile and start hosting</p>
-                        <p class="font-w3">Guaranteed no-hassle payments</p>
-                        <h3 class="font-w3">Before you start the sign-up process, here’s what you need to have ready</h3>
-                        <hr class="cs-foot-print" />
-                        <p class="font-w3">Photo of yourself</p>
-                        <p class="font-w3">Multiple photos of your home</p>
-                        <p class="font-w3">Info about and photos of your resident pets</p>
+                        <div ng-repeat="item in vm.data">
+                            <h3 class="font-w3">{{item.title}}</h3>
+                            <hr class="cs-foot-print" />
+                            <p class="font-w3" ng-repeat="subitem in item.points">
+                                {{subitem.point}}
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
